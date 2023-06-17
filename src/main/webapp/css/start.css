@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    
+    position: relative;
+    height:400px;
+    box-sizing: border-box;
+}
+
+
+
+.text-box {
+
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-wrap {
+  margin-right: 30px;
+}
+svg text {
+    font-family: 'Staatliches', cursive;
+    font-size: 6em;
+    fill:transparent;
+    stroke-dasharray: 326px;
+    animation: stroke 1s linear;
+    animation-fill-mode: forwards;
+}
+svg text:nth-child(1) {
+    animation-delay: 0s;
+}
+svg text:nth-child(2) {
+    animation-delay: 0.5s;
+}
+svg text:nth-child(3) {
+    animation-delay: 1s;
+}
+svg text:nth-child(4) {
+    animation-delay: 1.5s;
+}
+svg text:nth-child(5) {
+    animation-delay: 2s;
+}
+svg text:nth-child(6) {
+    animation-delay: 2.5s;
+}
+svg text:nth-child(7) {
+    animation-delay: 3s;
+}
+svg text:nth-child(8) {
+    animation-delay: 3.5s;
+}
+@keyframes stroke {
+    0%   {
+        stroke:#834a4a;
+        stroke-width: 3px;
+        stroke-dashoffset: 326px;
+    }
+    70% {
+        fill: transparent;
+    }
+    98% {
+        stroke:#834a4a;
+        stroke-width: 3px;
+    }
+    100% {
+        fill: #834a4a;
+        stroke-dashoffset: 0px;
+    }
+}
+
+
+
+
+.container{
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+  
+.box{
+    display: inline-block;
+    
+    width: 100%;
+    
+    position: relative;
+    /*margin:0 -4px -5px -2px;*/
+    transition: all .2s ease;
+}
+
+
+
+
+@media (max-width: 700px){
+    .box{
+      width: 50%;
+    }
+  
+    .box:nth-child(2n-1){
+      background-color: inherit;
+    }
+  
+  
+}
+  
+  @media (max-width: 420px){
+    .box{
+      width: 100%;
+    }
+  
+    .box:nth-child(4n),.box:nth-child(4n-3){
+      background-color: inherit;
+    }
+  
+    .box:nth-child(2n-1){
+      background-color:rgba(0,0,0,0.05);
+    }
+  
+}
+
+
+.hourglass{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    top: 10%;
+    top: -webkit-calc(50% - 43px);
+    top: calc(50% - 43px);
+    left: 35%;
+    left: -webkit-calc(50% - 43px);
+    left: calc(50% - 43px);
+    border: 3px solid #834a4a;
+    border-radius: 80px;
+    -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    -webkit-animation: hourglass 2s ease-in-out infinite;
+        animation: hourglass 2s ease-in-out infinite;
+}
+  
+.hourglass:before{
+    content: "";
+    position: absolute;
+    top:8px;
+    left: 18px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 37px 22px 0 22px;
+    border-color: #834a4a transparent transparent transparent;
+}
+.hourglass:after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 22px 37px 22px;
+    border-color: transparent transparent #834a4a transparent;
+}
+  
+@-webkit-keyframes hourglass{
+      0%{-webkit-transform:rotate(0deg);}
+      100%{-webkit-transform:rotate(180deg);}
+}
+  
+@keyframes hourglass{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(180deg);}
+}
+
+
+/*버튼*/
+
+.w-btn {
+  
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: 0.25s;
+  opacity: 0.01;
+  
+  
+}
+
+.w-btn-outline {
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+
+.w-btn:active {
+  transform: scale(1.6);
+}
+
+.w-btn-outline:active {
+  transform: scale(1.6);
+}
+
+@keyframes ring {
+  0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+  }
+  100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+  }
+}
+.w-btn-neon2 {
+  background-color: rgba(255, 255, 255,0.1);
+  position: relative;
+  z-index: 0;
+  left: 48%;
+  top: -70px;
+  
+  border: none;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.w-btn-neon2:hover {
+  transform: scale(1.2);
+}
+
+.w-btn-neon2:hover::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}

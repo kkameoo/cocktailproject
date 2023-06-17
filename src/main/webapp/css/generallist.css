@@ -1,0 +1,177 @@
+body {
+    background-image: linear-gradient(90deg, #131230, #744F5E);
+    background-size: cover;
+    margin-top: 10px;
+    text-align: center;
+}
+/*홈키 백키 버튼 구성*/
+.btnhome {
+    text-align: left;
+    float: left;
+    margin-right: 10px;
+}
+.btnhome > .btn_home {
+
+    
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_home:hover {
+    background-color: #FFB6C1;
+}
+
+.btnbackspace{
+    text-align:left;
+}
+.btnbackspace > .btn_backspace {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_backspace:hover {
+    background-color: #FFB6C1;
+}
+
+/*title*/
+.cocktail-title {
+    color:#eee;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cocktail-title hr {
+    border: none;
+    height: 3px;
+    width: 80%;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.square {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    margin-left: 18%;
+
+}
+
+.content {
+    width: 900px;
+    height: 200px;
+    background-color: gray ;
+    opacity: 40%;
+    border-radius: 20px 20px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer;   
+}    
+
+.content:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.exampleimg {
+    float:left;
+    padding-left: 20px;
+    padding-top:10px;
+    /*이미지 크기 고정*/
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    border-radius: 20%;
+}
+.name {
+    padding: 20px;
+    font-size: 40px;
+    font-weight:bolder;
+    color:white;
+}
+.key {
+    font-size : 20px;
+    font-weight: bold;
+    color:white;
+}
+.btn_next{
+    background-color: #555;
+    float:right;
+    margin-right: 10px;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    color:white;
+    font-size: 20px;
+}
+.btn_next:hover {
+    background-color: #444;
+}
+
+
+
+/*맨 위로 올라오는 버튼 생성*/
+#back-to-top {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #back-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #back-to-top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #back-to-top:active {
+    background-color: #555;
+  }
+  #back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+

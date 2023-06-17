@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generalrecommend</title>
+    <link rel="stylesheet" type="text/css" href="css/generalrecommend.css">
+
+    
+</head>
+<body>
+    <!-- 홈 백 버튼 -->
+    <div class="btnhome">
+        <button class="btn_home">HOME</button>
+    </div>
+    <div class="btnbackspace">
+        <button class="btn_backspace">BACK</button>
+    </div>
+    
+    <div class="cocktail-title">
+        COCKTAIL
+        <hr />
+    </div>
+
+    <div id="container">
+        <div>
+            <div>
+                <input id="display" type="text" />
+                <button onclick="del()">삭제</button>
+                <button onclick="reset()">초기화</button>
+            </div>
+            <div class="category">
+                <p class="alcol"></p>
+                <button value="jin" onclick="addOutput('진 ')">진</button>
+                <button value="bodcar" onclick="addOutput('보드카 ')">보드카</button>
+                <button value="wiski" onclick="addOutput('위스키 ')">위스키</button>
+                <button value="brandi" onclick="addOutput('브랜디 ')">브랜디</button>
+                <button value="rum" onclick="addOutput('럼 ')">럼</button>
+                <button value="dekilla" onclick="addOutput('데킬라 ')">데킬라</button>
+            </div>
+            <div class="category">
+                <p class="fruit"></p>
+                <button value="honey" onclick="addOutput('시럽 ')">시럽</button>
+                <button value="egg" onclick="addOutput('달걀 ')">달걀</button>
+            
+            </div>
+            <div class="category">
+                <p class="juice"></p>
+                <button value="juice" onclick="addOutput('주스 ')">주스</button>
+                <button value="water" onclick="addOutput('탄산수 ')">탄산수</button>
+            </div>
+        </div>
+    </div>
+     <!-- Start 버튼 추가 -->
+    <div id="btn_rec">
+        <button id="btn_general" class="btn_general">START</button>
+    </div>
+</div>
+<script src="js/generalrecommend.js"></script>
+
+    
+
+</body>
+</html>

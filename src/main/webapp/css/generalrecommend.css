@@ -1,0 +1,226 @@
+body {
+    min-height: 100vh;
+    opacity: 1;
+    background: #e2a9e5;
+    background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+    background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+    background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+    text-align: center;
+}
+
+/*홈키 백키 버튼 구성*/
+.btnhome {
+    text-align: left;
+    float: left;
+    margin-right: 10px;
+}
+.btnhome > .btn_home {
+
+    
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_home:hover {
+    background-color: #FFB6C1;
+}
+
+.btnbackspace{
+    text-align:left;
+}
+.btnbackspace > .btn_backspace {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_backspace:hover {
+    background-color: #FFB6C1;
+}
+
+/*title*/
+.cocktail-title {
+    color:#eee;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cocktail-title hr {
+    border: none;
+    height: 3px;
+    width: 80%;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* */
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    opacity: 0.7;
+    border-radius: 10px;
+    width:90%;
+    margin: 0 auto;
+  }
+  
+#display {
+    margin-top: 10px;
+    width: 950px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #d3d3d3;
+}
+  
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.category p {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+  
+button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #666666;
+}
+  
+button:active {
+    background-color: #222222;
+}
+  
+button:focus {
+    outline: none;
+}
+  
+@media screen and (max-width: 600px) {
+    #container {
+      grid-template-columns: 1fr;
+    }
+}
+
+/*아래 버튼 연동*/
+#btn_rec {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    height: 15vh;
+}
+  
+.btn_general {
+    font-family: futura-pt, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin: 30px;  
+    position: relative;
+    width: 240px;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;/*배경색 변경가능*/
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    outline: none;
+    cursor: pointer;
+    
+}
+.btn_general:hover {
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, .2);
+}
+.btn_general::before {
+    opacity: 0;
+    position: absolute;
+    top: calc(100% * var(--ripple-y));
+    left: calc(100% * var(--ripple-x));
+    transform: translate(-50%, -50%) scale(1);
+    padding: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    content: '';
+    transition: transform 1s, opacity 1s;
+}
+.btn_general:active::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0s;
+}
+.btn_general::after {
+    opacity: 0;
+    position: absolute;
+    top: calc(100% * var(--ripple-y));
+    left: calc(100% * var(--ripple-x));
+    transform: translate(-50%, -50%) scale(1);
+    padding: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    content: '';
+    transition: transform 2s, opacity 2s;
+}
+.btn_general:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0s;
+}
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+}

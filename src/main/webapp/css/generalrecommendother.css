@@ -1,0 +1,493 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+body{
+	justify-content: center;
+	min-height: 100vh;
+	display: flex;
+	place-items: center;
+	
+    opacity: 1;
+    background: #e2a9e5;
+    background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+    background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+    background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}
+
+/*홈키 백키 버튼 구성*/
+.btnhome {
+    position: fixed;
+  	top: 0;
+  	left: 0;
+	margin-right: 10px;
+}
+.btnhome > .btn_home {
+
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_home:hover {
+    background-color: #FFB6C1;
+}
+
+.btnbackspace{
+    position: fixed;
+  	top: 0;
+  	left: 80px;
+	
+}
+.btnbackspace > .btn_backspace {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+.btn_backspace:hover {
+    background-color: #FFB6C1;
+}
+
+
+
+
+
+
+
+
+
+.main{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 21em;
+	height: 34.38em;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.05);
+    background: #1c1c25;
+    opacity: 0.7;
+	border-radius: 10px;
+    margin: 1.25em;
+    
+}
+
+
+
+/*main2~3*/
+.main2{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 21em;
+	height: 34.38em;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.05);
+    background: #1c1c25;
+    opacity: 0.7;
+	border-radius: 10px;
+    margin: 1.25em;
+}
+.main3{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 21em;
+	height: 34.38em;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.05);
+    background: #1c1c25;
+    opacity: 0.7;
+	border-radius: 10px;
+	margin:0.53em;
+}
+.main4{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 21em;
+	height: 34.38em;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.05);
+    background: #1c1c25;
+    opacity: 0.7;
+	border-radius: 10px;
+}
+/**/
+  
+.main2 h1{
+	color: #ddd;
+	margin-top: 5px;
+}
+
+.main3 h1{
+	color: #ddd;
+	margin-top: 5px;
+}
+
+.main4 h1{
+	color: #ddd;
+	margin-top: 5px;
+}
+/**/
+
+
+.main h1{
+	color: #ddd;
+	margin-top: 5px;
+}
+
+ul{
+	margin-top: 3em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+ul li{
+	position: relative;
+	display: flex;
+	list-style: none;
+	margin-left: 4em;
+	width: 50%;
+}
+ul li:not(:first-child){
+	margin-top: 2em;
+}
+ul li label{
+	color: #ddd;
+	margin-left: 3em;
+	cursor: pointer;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+input[type=radio]{
+	display: none;
+}
+.custom_checkbox{
+	position: absolute;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: #27AE60;
+	border-radius: 50%;
+	transition: 0.5s cubic-bezier(0.5 , -0.55, 0.20, 1.55);
+}
+input[type=radio]:checked ~ .custom_checkbox{
+	background: #2ECC71;
+	box-shadow: 0 6px 12px #ABEBC6;
+	transform: scale(1.3);
+	animation: anime 2s infinite;
+}
+
+/* submit btn */
+.main #weather_btn{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 13px;
+	background: #27AE60;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*체크 버튼 2,3,4 */
+.main2 #feel_btn{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 13px;
+	background: #27AE60;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.main3 #mbti_btn{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 13px;
+	background: #27AE60;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.main4 #mbti2_btn{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 13px;
+	background: #27AE60;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/**/
+
+
+/* pop up screen */
+.complete_screen{
+	display: grid;
+	place-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1c1c25;
+	z-index: 50;
+	clip-path: circle(0% at 0% 0%);
+	transition: all 0.5s;
+}
+/*글씨 싸이즈*/
+.complete_screen .choose_weather{
+    font-weight: bold;
+    color: #27AE60;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.complete_screen label{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #27AE60;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox]:checked ~ .complete_screen{
+	clip-path: circle(150% at 0% 0%);
+}
+
+@keyframes anime{
+0% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141,0.6);
+	}
+	
+	70% {
+		box-shadow: 0 0 0 10px rgba(88, 214, 141, 0.1);
+	}
+	
+	100% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141, 0);
+	}
+}
+
+
+
+
+/*2실험*/
+.feel_screen{
+	display: grid;
+	place-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1c1c25;
+	z-index: 50;
+	clip-path: circle(0% at 0% 0%);
+	transition: all 0.5s;
+}
+/*글씨 싸이즈*/
+.feel_screen .choose_feel{
+    font-weight: bold;
+    color: #27AE60;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.feel_screen label{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #27AE60;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox]:checked ~ .feel_screen{
+	clip-path: circle(150% at 0% 0%);
+}
+
+@keyframes anime{
+0% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141,0.6);
+	}
+	
+	70% {
+		box-shadow: 0 0 0 10px rgba(88, 214, 141, 0.1);
+	}
+	
+	100% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141, 0);
+	}
+}
+
+
+/*3실험*/
+.mbti_screen{
+	display: grid;
+	place-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1c1c25;
+	z-index: 50;
+	clip-path: circle(0% at 0% 0%);
+	transition: all 0.5s;
+}
+/*글씨 싸이즈*/
+.mbti_screen .choose_mbti{
+    font-weight: bold;
+    color: #27AE60;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.mbti_screen label{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #27AE60;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox]:checked ~ .mbti_screen{
+	clip-path: circle(150% at 0% 0%);
+}
+
+@keyframes anime{
+0% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141,0.6);
+	}
+	
+	70% {
+		box-shadow: 0 0 0 10px rgba(88, 214, 141, 0.1);
+	}
+	
+	100% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141, 0);
+	}
+}
+
+
+/*4실험*/
+.mbti2_screen{
+	display: grid;
+	place-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1c1c25;
+	z-index: 50;
+	clip-path: circle(0% at 0% 0%);
+	transition: all 0.5s;
+}
+/*글씨 싸이즈*/
+.mbti2_screen .choose_mbti{
+    font-weight: bold;
+    color: #27AE60;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.mbti2_screen label{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #27AE60;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox]:checked ~ .mbti2_screen{
+	clip-path: circle(150% at 0% 0%);
+}
+
+@keyframes anime{
+0% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141,0.6);
+	}
+	
+	70% {
+		box-shadow: 0 0 0 10px rgba(88, 214, 141, 0.1);
+	}
+	
+	100% {
+		box-shadow: 0 0 0 0 rgba(88, 214, 141, 0);
+	}
+}
+
+
+
+.result {
+	position: fixed;
+	top:43em;
+	right:14em;
+}
+.result > .btn_result {
+
+    border-radius: 10px;
+    width: 25vh;
+	height: 5vh;
+    background-color: #eee; /*배경색*/
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    transition: background-color 0.3s ease;
+    /*글자 구성*/
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: black;
+}
+.btn_result:hover {
+    background: #e2a9e5;
+    background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+    background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+    background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}

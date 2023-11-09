@@ -23,4 +23,6 @@ JSP, Mysql, TomCat, Github
 ![Animation](https://github.com/kkameoo/cocktailproject/assets/116774845/661ba24b-f459-4364-8bc8-d3eb40d26b86)
 페이지 넘기기  
 ![검색기능](https://github.com/kkameoo/cocktailproject/assets/116774845/19bc26cd-eee1-4717-a5d1-db93d38a7cbe)
-검색 기능
+검색 기능  
+![버튼 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/b8827273-98c8-49c5-8737-d79cc68da842)
+버튼으로 넘어가는 기능

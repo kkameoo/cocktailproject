@@ -20,3 +20,5 @@ JSP, Mysql, TomCat, Github
 
 ### 기능 구현
 ***
+![Animation](https://github.com/kkameoo/cocktailproject/assets/116774845/661ba24b-f459-4364-8bc8-d3eb40d26b86)
+페이지 넘기기

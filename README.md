@@ -1,8 +1,10 @@
-### PORTFOLIO
+## PORTFOLIO
 ***
-- 목차
+### 목차
+***
+- 포트폴리오 개요
 - 기술 및 도구    
-
+- 기능 구현
 ### 포트폴리오 개요
 ***
 ![Test사진](https://github.com/kkameoo/cocktailproject/assets/116774845/dd32e5b3-dec6-4206-987c-7970779faf1c)

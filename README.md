@@ -25,4 +25,6 @@ JSP, Mysql, TomCat, Github
 ![검색기능](https://github.com/kkameoo/cocktailproject/assets/116774845/19bc26cd-eee1-4717-a5d1-db93d38a7cbe)
 검색 기능  
 ![버튼 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/b8827273-98c8-49c5-8737-d79cc68da842)
-버튼으로 넘어가는 기능
+재료에 맞는 칵테일들을 보여주는 기능  
+![MBTI 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/907f2564-0b97-41f1-a94f-fe6caa078a82)
+MBTI에 맞는 칵테일들을 보여주는 기능 

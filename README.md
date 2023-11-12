@@ -6,6 +6,7 @@
 - [기술 및 도구](https://github.com/kkameoo/cocktailproject#기술-및-도구)
 - [백엔드 사용 기술](https://github.com/kkameoo/cocktailproject#백엔드-사용-기술)
 - [기능 구현](https://github.com/kkameoo/cocktailproject#기능-구현)
+- [시현 영상](https://github.com/kkameoo/cocktailproject#시현-영상)
 ### 포트폴리오 개요
 ***
 ![Test사진](https://github.com/kkameoo/cocktailproject/assets/116774845/dd32e5b3-dec6-4206-987c-7970779faf1c)
@@ -40,3 +41,5 @@
 ##  MBTI에 맞는 칵테일들을 보여주는 기능 
 ![MBTI 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/907f2564-0b97-41f1-a94f-fe6caa078a82)
 
+### 시현 영상
+https://www.youtube.com/watch?v=nXI_UoIDwXA

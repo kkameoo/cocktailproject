@@ -42,4 +42,5 @@
 ![MBTI 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/907f2564-0b97-41f1-a94f-fe6caa078a82)
 
 ### 시현 영상
+***
 https://www.youtube.com/watch?v=nXI_UoIDwXA

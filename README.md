@@ -3,7 +3,8 @@
 ### 목차
 ***
 - [포트폴리오 개요](https://github.com/kkameoo/cocktailproject#포트폴리오-개요)
-- [기술 및 도구](https://github.com/kkameoo/cocktailproject#기술-및-도구)    
+- [기술 및 도구](https://github.com/kkameoo/cocktailproject#기술-및-도구)
+- [백엔드 사용 기술](https://github.com/kkameoo/cocktailproject#백엔드-사용-기술)
 - [기능 구현](https://github.com/kkameoo/cocktailproject#기능-구현)
 ### 포트폴리오 개요
 ***
@@ -15,7 +16,7 @@
 
 ### 기술 및 도구
 ***
-프론트엔드 - Html    
+프론트엔드 - Html, CSS, javascript            
 백엔드 - JSP    
 데이터베이스 - Mysql    
 서버 구동 - TomCat10     

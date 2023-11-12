@@ -15,7 +15,7 @@
 
 ### 기술 및 도구
 ***
-프론트엔드 - Html
+프론트엔드 - Html    
 백엔드 - JSP    
 데이터베이스 - Mysql    
 서버 구동 - TomCat10     
@@ -24,12 +24,12 @@
 
 ### 기능 구현
 ***
-##페이지 넘기기
+##  페이지 넘기기
 ![Animation](https://github.com/kkameoo/cocktailproject/assets/116774845/661ba24b-f459-4364-8bc8-d3eb40d26b86)
-##검색 기능  
+##  검색 기능  
 ![검색기능](https://github.com/kkameoo/cocktailproject/assets/116774845/19bc26cd-eee1-4717-a5d1-db93d38a7cbe)
-##재료에 맞는 칵테일들을 보여주는 기능 
+##  재료에 맞는 칵테일들을 보여주는 기능 
 ![버튼 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/b8827273-98c8-49c5-8737-d79cc68da842)
-##MBTI에 맞는 칵테일들을 보여주는 기능 
+##  MBTI에 맞는 칵테일들을 보여주는 기능 
 ![MBTI 기능](https://github.com/kkameoo/cocktailproject/assets/116774845/907f2564-0b97-41f1-a94f-fe6caa078a82)
 

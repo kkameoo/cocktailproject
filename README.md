@@ -10,7 +10,7 @@
 ![Test사진](https://github.com/kkameoo/cocktailproject/assets/116774845/dd32e5b3-dec6-4206-987c-7970779faf1c)
 분류: 팀 프로젝트  
 제작 기간: 2023.04.01 ~ 2023.05.01  
-팀 인원: 6명
+팀 인원: 6명    
 담당: 백엔드
 
 ### 기술 및 도구

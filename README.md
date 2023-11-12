@@ -21,7 +21,13 @@
 서버 구동 - TomCat10     
 형상 관리 - Github       
 개발 도구 - Vscode, Intellij
-
+      
+### 백엔드 사용 기술
+***
+- jstl
+- REST API
+- Servlet
+      
 ### 기능 구현
 ***
 ##  페이지 넘기기
